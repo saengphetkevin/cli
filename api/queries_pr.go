@@ -188,6 +188,7 @@ type CheckContext struct {
 	IsRequired bool   `json:"isRequired"`
 	CheckSuite struct {
 		WorkflowRun struct {
+			Event    string `json:"event"`
 			Workflow struct {
 				Name string `json:"name"`
 			} `json:"workflow"`
